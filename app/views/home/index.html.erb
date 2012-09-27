@@ -1,0 +1,11 @@
+<% content_for :footer do %>
+  <%= render :partial => "/shared/footer" %>
+<% end %>
+<% content_for :search do %>
+  <%= render :partial => "/home/search" %>
+<% end %>
+<%= javascript_tag do %>
+  svg = new myGraph("#container");
+<% end %>
+<%= render "index" %>
+

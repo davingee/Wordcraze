@@ -1,0 +1,10 @@
+/log
+/tmp
+/db/development.sqlite3
+/db/production.sqlite3
+*.core
+.sass-cache
+public/assets
+
+/db/test.sqlite3
+/Gemfile.lock
