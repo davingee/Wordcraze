@@ -1,0 +1,40 @@
+/usr/local/rubies/ruby-2.1.6/bin/ruby -r ./siteconf20160630-4577-s3ldiv.rb extconf.rb
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+compiling v8_callbacks.cpp
+compiling v8_script.cpp
+compiling v8_function.cpp
+compiling v8_date.cpp
+compiling v8_weakref.cpp
+compiling v8.cpp
+compiling v8_object.cpp
+compiling v8_context.cpp
+compiling v8_message.cpp
+compiling v8_array.cpp
+compiling v8_string.cpp
+compiling v8_try_catch.cpp
+compiling v8_exception.cpp
+v8_exception.cpp:10: warning: ‘<unnamed>::stack’ defined but not used
+compiling v8_handle.cpp
+compiling v8_v8.cpp
+compiling v8_debug.cpp
+compiling v8_value.cpp
+compiling v8_external.cpp
+v8_external.cpp:10: warning: ‘<unnamed>::references’ defined but not used
+compiling v8_locker.cpp
+v8_locker.cpp: In function ‘VALUE<unnamed>::Lock::Delete(VALUE)’:
+v8_locker.cpp:45: warning: no return statement in function returning non-void
+v8_locker.cpp: In function ‘VALUE<unnamed>::Unlock::Delete(VALUE)’:
+v8_locker.cpp:85: warning: no return statement in function returning non-void
+compiling rr.cpp
+rr.cpp: In function ‘VALUE rr_define_finalizer(VALUE, void*, VALUE)’:
+rr.cpp:48: warning: no return statement in function returning non-void
+compiling v8_template.cpp
+linking shared-object v8.so
+
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 v8.so ./.gem.20160630-4577-1p3m70i
+installing default v8 libraries

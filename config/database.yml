@@ -1,4 +1,3 @@
-<% unless Rails.env == "production" %>
 development:
   adapter: mysql2
   encoding: utf8
@@ -22,8 +21,6 @@ test:
   password: 
   socket: /tmp/mysql.sock
 
-<% else %>
-
 production:
   adapter: mysql2
   encoding: utf8
@@ -34,4 +31,3 @@ production:
   password: scoran_fucker
   socket: /tmp/mysql.sock
 
-<% end %>

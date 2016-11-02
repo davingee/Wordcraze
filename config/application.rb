@@ -1,5 +1,4 @@
 require File.expand_path('../boot', __FILE__)
-require "#{File.expand_path('lib')}/rack/api/user.rb"
 
 require 'rails/all'
 
@@ -42,8 +41,6 @@ module Wordgame
 
     # Enable escaping HTML in JSON.
     config.active_support.escape_html_entities_in_json = true
-
-    config.middleware.use Rack::Api::User
 
     # Use SQL instead of Active Record's schema dumper when creating the database.
     # This is necessary if your schema can't be completely dumped by the schema dumper,

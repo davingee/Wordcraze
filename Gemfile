@@ -36,8 +36,8 @@ group :development, :test do
   gem 'uglifier', '>= 1.0.3'
   gem "pry"
   gem 'awesome_print'
-  gem 'unicorn'
-  gem "mocha"
   # gem 'thin'
+  gem 'unicorn'
   # gem "passenger"
+  gem "mocha"
 end

@@ -1,0 +1,14 @@
+/usr/local/rubies/ruby-2.1.6/bin/ruby -r ./siteconf20160630-4577-iu7a73.rb extconf.rb
+checking for main() in -lstdc++... yes
+checking for ruby/encoding.h... yes
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+compiling unf.cc
+linking shared-object unf_ext.so
+
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 unf_ext.so ./.gem.20160630-4577-17wy3c4
+installing default unf_ext libraries

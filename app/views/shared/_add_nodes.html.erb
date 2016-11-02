@@ -63,8 +63,6 @@ function myGraph(el) {
         .gravity(.1)
         .distance(170)
         .charge(-250)
-        .linkDistance("25")
-        //https://github.com/mbostock/d3/wiki/Force-Layout
         .size([w, h]);
 
     var nodes = force.nodes(),
@@ -73,7 +71,6 @@ function myGraph(el) {
     this.update = function () {
 
         var link = vis.selectAll("line.link")
-        
             .data(links, function(d) { return d.source.id + "-" + d.target.id; })
             .attr("class", "link")
             .style("stroke-width", function(d) { return Math.sqrt(d.value); });
